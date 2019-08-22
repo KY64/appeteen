@@ -21,14 +21,7 @@ Next.prepare().then(() => {
   app.use(express.json());
   app.use("/", require("./routes/router"));
   app.get("*", (req, res) => {
-    if (req.url.startsWith('/sw')) {
-      Next.serveStatic(req, res, join(root, `./static/workbox/${req.url}`))
-    }
-    else if (req.url.startsWith('/static/workbox/')) {
-      Next.serveStatic(req, res, join(root, `.${req.url}`))
-    } else {
-      handle(req, res, req.url)
-    }
+      return handle(req, res);
   });
 
   app.listen(PORT, err => {
