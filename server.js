@@ -6,9 +6,8 @@ const express = require("express"),
   PORT = process.env.PORT || 3000,
   dev = process.env.NODE_ENV !== "production",
   Next = next({ dev }),
-  handle = Next.getRequestHandler(),
-  root = process.cwd();
-
+  handle = Next.getRequestHandler()
+  
 mongoose.connect(
   `mongodb+srv://${process.env.DB_USER}:${
     process.env.DB_PASSWORD
