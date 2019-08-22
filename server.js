@@ -30,11 +30,14 @@ Next.prepare().then(() => {
   })
 
   const options = {
-    key: fs.readFileSync('./static/server.key'),
-    cert: fs.readFileSync('./static/server.cert')
+    key: fs.readFileSync('./server.key'),
+    cert: fs.readFileSync('./server.cert')
   }
   
-  https.createServer(options, app).listen(PORT, err => {
+  https.createServer(options, (req, res) => {
+    res.writeHead(200);
+    res.end('hello world\n');
+  }).listen(PORT, err => {
     if (err) throw err;
       console.log("Berhasil cuy! Koneksi ke PORT ", PORT);
   });
