@@ -21,7 +21,15 @@ Next.prepare().then(() => {
   app.use(express.json());
   app.use("/", require("./routes/router"));
   app.get("*", (req, res) => {
+<<<<<<< HEAD
       return handle(req, res);
+=======
+    if (req.url.startsWith("/sw")) {
+      return Next.serveStatic(req, res, join(__dirname, `./static/workbox/${req.url}`));
+    } else {
+      return handle(req, res, req.url);
+    }
+>>>>>>> parent of d26da6b... Trial
   });
 
   app.listen(PORT, err => {
