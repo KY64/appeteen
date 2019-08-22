@@ -22,7 +22,7 @@ Next.prepare().then(() => {
   app.get("*", (req, res) => {
     if (req.url.startsWith("/sw")) {
       return Next.serveStatic(req, res, join(__dirname, `./static/workbox/${req.url}`));
-    } else if (req.url.startsWith("/static/workbox/")) {
+    } else if (req.url.startsWith("/static/")) {
       return Next.serveStatic(req, res, join(__dirname, `.${req.url}`));
     } else {
       return handle(req, res, req.url);
