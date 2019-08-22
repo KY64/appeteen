@@ -1,8 +1,6 @@
 const express = require("express"),
   app = express(),
   {join} = require('path'),
-  fs = require('fs'),
-  https = require('https'),
   next = require("next"),
   mongoose = require("mongoose"),
   PORT = process.env.PORT || 3000,
@@ -28,17 +26,9 @@ Next.prepare().then(() => {
     else
       return handle(req, res);
   })
-
-  const options = {
-    key: fs.readFileSync('./server.key'),
-    cert: fs.readFileSync('./server.cert')
-  }
   
-  https.createServer(options, (req, res) => {
-    res.writeHead(200);
-    res.end('hello world\n');
-  }).listen(PORT, err => {
+  app.listen(PORT, err => {
     if (err) throw err;
-      console.log("Berhasil cuy! Koneksi ke PORT ", PORT);
+    console.log("Berhasil cuy! Koneksi ke PORT ", PORT);
   });
 });
