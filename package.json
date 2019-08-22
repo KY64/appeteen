@@ -16,7 +16,7 @@
     "node": "10.x"
   },
   "devDependencies": {
-    "next-workbox-webpack-plugin": "^2.1.1",
-    "nodemon": "^1.19.1"
+    "nodemon": "^1.19.1",
+    "sw-precache-webpack-plugin": "^0.11.5"
   }
 }

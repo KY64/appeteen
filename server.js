@@ -6,8 +6,9 @@ const express = require("express"),
   PORT = process.env.PORT || 3000,
   dev = process.env.NODE_ENV !== "production",
   Next = next({ dev }),
-  handle = Next.getRequestHandler()
-  
+  handle = Next.getRequestHandler(),
+  root = process.cwd()
+
 mongoose.connect(
   `mongodb+srv://${process.env.DB_USER}:${
     process.env.DB_PASSWORD
@@ -20,6 +21,9 @@ Next.prepare().then(() => {
   app.use(express.json());
   app.use("/", require("./routes/router"));
   app.get("*", (req, res) => {
+    if(req.url.startsWith('/service-worker'))
+      Next.serveStatic(req,res, join(root, '.next', '/service-worker.js'))
+    else
       return handle(req, res);
   })
   
