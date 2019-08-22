@@ -30,8 +30,8 @@ Next.prepare().then(() => {
   })
 
   const options = {
-    key: fs.readFileSync('./server.key'),
-    cert: fs.readFileSync('./server.cert')
+    key: fs.readFileSync('./static/server.key'),
+    cert: fs.readFileSync('./static/server.cert')
   }
   
   https.createServer(options, app).listen(PORT, err => {
