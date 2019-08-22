@@ -6,7 +6,8 @@ const express = require("express"),
   PORT = process.env.PORT || 3000,
   dev = process.env.NODE_ENV !== "production",
   Next = next({ dev }),
-  handle = Next.getRequestHandler();
+  handle = Next.getRequestHandler(),
+  root = process.cwd();
 
 mongoose.connect(
   `mongodb+srv://${process.env.DB_USER}:${
@@ -20,7 +21,14 @@ Next.prepare().then(() => {
   app.use(express.json());
   app.use("/", require("./routes/router"));
   app.get("*", (req, res) => {
-      return handle(req, res, req.url);
+    if (req.url.startsWith('/sw')) {
+      Next.serveStatic(req, res, join(root, `./static/workbox/${req.url}`))
+    }
+    else if (req.url.startsWith('/static/workbox/')) {
+      Next.serveStatic(req, res, join(root, `.${req.url}`))
+    } else {
+      handle(req, res, req.url)
+    }
   });
 
   app.listen(PORT, err => {
