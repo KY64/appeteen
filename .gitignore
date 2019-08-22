@@ -1,5 +1,5 @@
 node_modules
 .next
 static/workbox
-server.cert
-server.key
+*.cert
+*.key
