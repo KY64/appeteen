@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.tv_login {
+    margin-top: 50px;
+  }
+  #cardview {
+    width: 50%;
+    padding: 100px 0;
+    background: white;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-top-left-radius: 180px;
+    border-top-right-radius: 180px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  #ed_email {
+    font-size: 20px;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 10px 20px;
+    background: none;
+    border-bottom: 2px inset #DD2E54;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
+
+  ::placeholder {
+    opacity: 0.4;
+  }
+
+  #ed_password {
+    font-size: 20px;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px inset #DD2E54;
+    padding: 10px 20px;
+  }
+
+  .forgot {
+    margin-top: 10px;
+    float: right;
+    margin-right: 30px;
+    background: none;
+    border: none;
+  }
+
+  .loginGoogle {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    padding: 10px 0;
+    background: none;
+    border-radius: 10px;
+  }
+
+  .login {
+    display: block;
+    width: 40%;
+    margin: 0 auto;
+    padding-left: -40px;
+    font-size: 20px;
+    background: #DD2E54;
+    border: #DD2E54;
+    border-radius: 10px;
+    padding: 10px 0;
+  }
+
+  
