@@ -16,11 +16,11 @@ const Head = props => (
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#E6224C" />
-    <link rel="icon" sizes="192x192" href="/static/touch-icon.png" />
-    <link rel="apple-touch-icon" href="/static/touch-icon.png" />
-    <link rel="apple-touch-icon" sizes="152x152" href="/static/touch-icon.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/static/touch-icon.png" />
-    <link rel="apple-touch-icon" sizes="167x167" href="/static/touch-icon.png" />
+    <link rel="icon" sizes="192x192" href="/static/pudding.png" />
+    <link rel="apple-touch-icon" href="/static/pudding (1).png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/static/pudding.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/pudding.png" />
+    <link rel="apple-touch-icon" sizes="167x167" href="/static/pudding.png" />
     <link rel="apple-touch-startup-image" sizes="167x167" href="/static/splash.png" />
     <link rel="mask-icon" href="/static/favicon-mask.svg" color="#49B882" />
     <link rel="icon" href="/static/favicon.ico" />
