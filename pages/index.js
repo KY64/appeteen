@@ -63,6 +63,7 @@ const Home = () => {
           </Link>
         </div>
       </div>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
       <style jsx>{`
         .hero {
