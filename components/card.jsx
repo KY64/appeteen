@@ -8,15 +8,11 @@ export default (props) =>
 {props.children}
 <style jsx>{`
 .card{
-    width: 50%;
-    padding-bottom: 70px;
-    padding-top: 70px;
+    width: 100%;
+    padding: 25px 0;
     background: white;
     margin: 0 auto;
-    border-top-left-radius: 180px;
-    border-top-right-radius: 180px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;    
+    border-radius: 40px;    
 }
 .login{
     color: #FFF;

@@ -31,48 +31,48 @@ div {
 
 .loginGoogle{
     margin: 0 auto;
-    font-size: 20px;
-    width: 45%;
+    font-size: 10pt;
+    width: 80%;
     display: block;
     margin-top: 5%;
-    padding: 5px 5px;
+    padding: 10px 10px;
     border: 1.5px solid #C0C0C0;
-    border-radius: 15px;
+    border-radius: 5px;
     background: none;
-    margin-bottom: 5%;
+    margin-bottom: 15%;
 }
 
 .forgot{
-    position: relative;
-    right: 0;
-    margin-right: 20%;
+    margin-right: 50px;
     margin-bottom: 20%;
     text-decoration: none;
     color: #DD2E54;
-    font-size: 13px;
+    font-size: 10pt;
 }
 
 #ed_email{
-    width: 50%;
+    width: 70%;
     display: block;
-    font-size: 20px;
+    font-size: 10pt;
     margin: 0 auto;
     margin-bottom: 5%;
     border: none;
     border-bottom: 2px inset #DD2E54;
     padding: 10px 10px;
+    outline: none;
 }
 
 #ed_password{
-    width: 50%;
+    width: 70%;
     display: block;
-    font-size: 20px;
+    font-size: 10pt;
     margin: 0 auto;
     margin-bottom: 10px;
     border: none;
     border-bottom: 2px inset #DD2E54;
     padding: 10px 10px;
+    outline: none;
 }
-
+ 
 `}</style>
 </Card>
