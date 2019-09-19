@@ -36,7 +36,7 @@ const Home = () => {
   return (
     <Layout>
       <Head title="Home" />
-      <Search />
+      <Search bg="#DD2E54" bgForm="rgba(255, 255, 255, 0.7)" />
       <section id="category">
         <div className="masakan">Masakan</div>
         <div className="snack">Snack</div>
