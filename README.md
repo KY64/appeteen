@@ -1,8 +1,8 @@
 # Appeteen
 
-<img src="preview-1.png" width=300 style="margin-right:30px" />
+<img src="preview-1.png" width=200 style="margin-right:30px" />
 
-<img src="preview-2.png" width=300 />
+<img src="preview-2.png" width=200 />
 
 ## Description
 
